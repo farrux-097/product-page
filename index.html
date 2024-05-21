@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Productfit</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+</head>
+<body class="bg-[#F8FFFF]">
+    <header class="pt-[32px] pb-[60px]">
+      <div class="containers">
+        <div class="flex justify-center md:justify-between items-center">
+          <a href="#">
+              <img src="./images/Logo.svg" alt="logo">
+          </a>
+          <div class="flex space-x-[58px] items-center">
+              <a class="hidden lg:block" href="https://www.telegram.com">
+                <img src="./images/telegram.svg" alt="telegram" width="46" height="29">
+              </a>
+              <a class="hidden lg:block" href="mailto:">
+                <img src="./images/sms.svg" alt="sms" width="46" height="29">
+              </a>
+              <a class="hidden md:flex space-x-[16px] items-center" href="tel:+78003017927">
+                <img src="./images/tel.svg" alt="stel" width="18" height="32">
+                <span class="text-[#1E959B] font-semibold">+7 800 301-79-27</span>
+              </a>
+              <button class="hidden md:block w-[187px] py-[23px] border-[3px] border-transparent rounded-[15px] bg-[#F05670] text-white hover:border-[3px] hover:border-[#F05670]
+              hover:bg-white hover:text-[#F05670]">НАЧАТЬ ПРОЕКТ</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+      <section class="pb-[143px]">
+        <div class="containers">
+          <div class="px-[162px]">
+            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true"  space-between="30"
+            centered-slides="true" autoplay-delay="3500" autoplay-disable-on-interaction="false">
+              <swiper-slide>
+                <img src="./images/1-img.png" alt="img" width="100%">
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./images/3-img.png" alt="img" width="100%">
+              </swiper-slide>
+              <swiper-slide>
+                <img src="./images/4-img.png" alt="img" width="100%">
+              </swiper-slide>
+            </swiper-container>
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="">
+          <div class="px-[35px] xl:flex xl:justify-between  xl:px-[120px]">
+            <div class="mx-auto w-[478px] pb-[22px] px-[60px] pt-[222px] rounded-[30px] bg-gradient-to-r from-[#FFFFFF] to-[#F7F9Ff] relative">
+              <img class="absolute top-[-80px]" src="./images/section-img.png" alt="img" width="334" height="254">
+              <ul class="flex justify-between">
+                <li class="w-[40%] border-r border-[#1E959B] mb-[27px]">
+                  <p class="text-[16px] text-[#3C3C3C]">Длительность</p>
+                  <span class="text-[24px] font-semibold text-[#1E959B]">10 недель</span>
+                </li>
+                <li>
+                  <p class="text-[16px] text-[#3C3C3C]">Колличество спринтов</p>
+                  <span class="text-[24px] font-semibold text-[#1E959B]">20 Спринтов</span>
+                </li>
+              </ul>
+              <img class="mb-[20px]" src="./images/section-img2.png" alt="img" width="203" height="55">
+              <a class="ml-[97px]"  href="#">
+                <img class="ml-[97px] mb-[20px]" src="./images/section-logo.svg" alt="section-link" width="130" height="30">
+              </a>
+              <button class="w-[377px] py-[29px] bg-[#F05670] rounded-[15px] border-[3px] border-transparent   text-white hover:border-[3px] hover:border-[#F05670]
+              hover:bg-white hover:text-[#F05670]">УЗНАТЬ СТОИМОСТЬ ПРОЕКТА</button>
+            </div>
+            <div class="mx-auto text-center max-w-[608px] xl:text-start">
+              <p class="font-bold text-[32px] text-[#1E959B] mb-[27px]">OpenGift – ЭТО СИСТЕМА МОНЕТИЗАЦИИ OPENSOURCE-ПРОЕКТОВ НА ОСНОВЕ БЛОКЧЕЙНА HYPERLEDGER FABRIK.</p>
+              <p class="text-[14px] font-regular ">К разработке платформы было привлечено более 5000 разработчиков. Ее интегрировали с сетью блокчейнов. Альфа-версия была запущена в январе 2018 года. OpenGIft был создан для решения проблем, унаследованных от разработки программного обеспечения. Платформа позволяет компаниям разделять расходы на программное обеспечение, а управление проектами является основной функцией, помогающей в сотрудничестве.
+  
+                Для монетизации используются смарт-контракты, чтобы создать пассивный, периодический потенциал дохода. Уникальность проекта в видении на разработку с открытым исходным кодом.</p>
+            </div>
+          </div>
+      </section>
+    </main>
+
+
+
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+</html>
